@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Java Extra Credit</title>
+    </head>
+    <body>
+        <h1>Java Extra Credit Worksheet</h1>
+        <script language="javascript">
+
+            function runCode() {
+                problem1()
+                problem2()
+                problem3()
+                problem4()
+                problem5()
+            }
+
+            
+                function problem1() {
+                    document.write('Question 1: <br>')
+                    for (n=40; n>=0; n-=2)
+                        document.write(n + ' ')
+                }
+
+            
+                function problem2() {
+                    document.write('<br><br>Question 2: <br>')
+                    let sum = 0.0
+                    while (sum <= 20) {
+                        sum = sum + parseFloat(prompt("Insert a Number (Q2):"))
+                    }
+                    document.write('Sum is equal to or greater than 20')
+                }
+
+            
+                function problem3() {
+                    document.write('<br><br>Question 3: <br>')
+                    var array = []
+                    sum = 0
+                    while (sum <= 20) {
+                        array.push(parseFloat(prompt('Insert a Number (Q3):')))
+                        for (i = 0; i < array.length; i++) {
+                            sum = sum + array[i]
+                        }
+                    }
+                    document.write(array)
+                }
+
+        
+                function problem4() {
+                    document.write('<br><br>Question 4: <br>')
+                    var songs = []
+                    songs['Sweet Caroline'] = 'Neil Diamond'
+                    songs['The Chain'] = 'Fleetwood Mac'
+                    songs['Vienna'] ='Billy Joel'
+                    songs['Start Me Up'] = 'The Rolling Stones'
+                    songs['Linger'] = 'The Cranberries'
+                    songs['Landslide'] = 'The Chicks'
+                    
+                    for (song in songs) {
+                        document.write(song + ": " + songs[song] + "<br>")
+
+                    }
+         
+                }
+
+
+                function problem5() {
+                    document.write('<br>Question 5: <br>')
+                    var songs = []
+                    songs['Sweet Caroline'] = 'Neil Diamond'
+                    songs['The Chain'] = 'Fleetwood Mac'
+                    songs['Vienna'] ='Billy Joel'
+                    songs['Start Me Up'] = 'The Rolling Stones'
+                    songs['Linger'] = 'The Cranberries'
+                    songs['Landslide'] = 'The Chicks'
+
+                    band = prompt('Enter the name of a band:')
+                    for (song in songs) {
+                        if (songs[song] == band) {
+                            document.write(song)
+                        }
+                    }
+                }
+ 
+        runCode()
+        </script>
+
+    </body>
+</html>
